@@ -756,37 +756,11 @@ MonoBehaviour:
   m_MaximumFOV: 60
   m_MinimumOrthoSize: 1
   m_MaximumOrthoSize: 5000
---- !u!54 &1203754979 stripped
-Rigidbody:
-  m_CorrespondingSourceObject: {fileID: 8943088697123119177, guid: a184f3db49e8c4e2daab584e8e87db19, type: 3}
+--- !u!95 &1203754982 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3511142900399504312, guid: a184f3db49e8c4e2daab584e8e87db19, type: 3}
   m_PrefabInstance: {fileID: 398256785674077198}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1344914403 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6024123984630007088, guid: a184f3db49e8c4e2daab584e8e87db19, type: 3}
-  m_PrefabInstance: {fileID: 398256785674077198}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &1344914408
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1344914403}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1.0000002, z: 1.0000002}
-  m_Center: {x: 0.00000007636845, y: 0.000000074505806, z: -0.0000104904175}
 --- !u!224 &1346103489 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8170153792821263258, guid: 0d230cc8be529a542a08cb878ab14b18, type: 3}
@@ -970,21 +944,13 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1281003629643874676, guid: a184f3db49e8c4e2daab584e8e87db19, type: 3}
-      propertyPath: rb
+      propertyPath: anim
       value: 
-      objectReference: {fileID: 1203754979}
-    - target: {fileID: 1281003629643874676, guid: a184f3db49e8c4e2daab584e8e87db19, type: 3}
-      propertyPath: speed
-      value: 15
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1203754982}
     - target: {fileID: 1281003629643874676, guid: a184f3db49e8c4e2daab584e8e87db19, type: 3}
       propertyPath: FloatingJoystick
       value: 
       objectReference: {fileID: 404614777}
-    - target: {fileID: 1817865371935412537, guid: a184f3db49e8c4e2daab584e8e87db19, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.6
-      objectReference: {fileID: 0}
     - target: {fileID: 4723290565617995253, guid: a184f3db49e8c4e2daab584e8e87db19, type: 3}
       propertyPath: m_LocalPosition.x
       value: 84.769226
@@ -1025,38 +991,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4984729824887715381, guid: a184f3db49e8c4e2daab584e8e87db19, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.6
+    - target: {fileID: 6909725681218545716, guid: a184f3db49e8c4e2daab584e8e87db19, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6909725681218545716, guid: a184f3db49e8c4e2daab584e8e87db19, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -148.52
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6909725681218545716, guid: a184f3db49e8c4e2daab584e8e87db19, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7438449369346164798, guid: a184f3db49e8c4e2daab584e8e87db19, type: 3}
       propertyPath: m_Name
       value: Level 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8688601432178393013, guid: a184f3db49e8c4e2daab584e8e87db19, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 8943088697123119177, guid: a184f3db49e8c4e2daab584e8e87db19, type: 3}
-      propertyPath: m_Constraints
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8943088697123119177, guid: a184f3db49e8c4e2daab584e8e87db19, type: 3}
-      propertyPath: m_IsKinematic
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8314443022873805047, guid: a184f3db49e8c4e2daab584e8e87db19, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6024123984630007088, guid: a184f3db49e8c4e2daab584e8e87db19, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1344914408}
     - targetCorrespondingSourceObject: {fileID: 3894429500378142757, guid: a184f3db49e8c4e2daab584e8e87db19, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
