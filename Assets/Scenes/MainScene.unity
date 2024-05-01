@@ -188,7 +188,7 @@ Transform:
   m_GameObject: {fileID: 198648231}
   serializedVersion: 2
   m_LocalRotation: {x: 0.19108397, y: 0.00089547253, z: -0.000069777976, w: 0.98157334}
-  m_LocalPosition: {x: -1.183605, y: -7.03874, z: -16.709723}
+  m_LocalPosition: {x: -1.1836051, y: -7.0387406, z: -16.692722}
   m_LocalScale: {x: 1, y: 1, z: 0.9384122}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -589,7 +589,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: 0.19108397, y: 0.00089547253, z: -0.000069777976, w: 0.98157334}
-  m_LocalPosition: {x: -1.183605, y: -7.03874, z: -16.709723}
+  m_LocalPosition: {x: -1.1836051, y: -7.0387406, z: -16.692722}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -898,26 +898,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1803495465697443907, guid: 2d55006cc0b5d429cb972bc6d07d604e, type: 3}
-      propertyPath: m_Mass
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 1803495465697443907, guid: 2d55006cc0b5d429cb972bc6d07d604e, type: 3}
-      propertyPath: m_Constraints
-      value: 32
-      objectReference: {fileID: 0}
-    - target: {fileID: 1851779621979040694, guid: 2d55006cc0b5d429cb972bc6d07d604e, type: 3}
-      propertyPath: MoveSpeed
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1851779621979040694, guid: 2d55006cc0b5d429cb972bc6d07d604e, type: 3}
-      propertyPath: FixedJoystick
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1851779621979040694, guid: 2d55006cc0b5d429cb972bc6d07d604e, type: 3}
-      propertyPath: maxSlopeAngle
-      value: 40
-      objectReference: {fileID: 0}
     - target: {fileID: 1851779621979040694, guid: 2d55006cc0b5d429cb972bc6d07d604e, type: 3}
       propertyPath: FloatingJoystick
       value: 
@@ -936,7 +916,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5314442185552845508, guid: 2d55006cc0b5d429cb972bc6d07d604e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.44
+      value: -7.423
       objectReference: {fileID: 0}
     - target: {fileID: 5314442185552845508, guid: 2d55006cc0b5d429cb972bc6d07d604e, type: 3}
       propertyPath: m_LocalRotation.w

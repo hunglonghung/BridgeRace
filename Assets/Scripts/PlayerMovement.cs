@@ -41,6 +41,15 @@ public class PlayerMovement : MonoBehaviour
                 break;
         }
     }
+    void UpdateRotation(Vector3 direction)
+    {
+        if (direction.magnitude >= 0.1f) // Check if there's significant movement
+        {
+            Quaternion newRotation = Quaternion.LookRotation(direction);
+            rb.rotation = Quaternion.Slerp(rb.rotation, newRotation, Time.fixedDeltaTime * 10); // Adjust 10 to your liking for smoothness
+        }
+    }
+
 
     void UpdateMovementState()
     {
@@ -73,7 +82,7 @@ public class PlayerMovement : MonoBehaviour
 
     void MoveOnSlope(Vector3 direction)
     {
-        if (OnSlope() )
+        if (OnSlope())
         {
             rb.AddForce(GetSlopeMoveDirection() * MoveSpeed * 20f, ForceMode.Force);
 
