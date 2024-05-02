@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BrickColor
   m_EditorClassIdentifier: 
   materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 86fa2d836894a4522bee530663fd3f47, type: 2}
   - {fileID: 2100000, guid: 79218098b3fefa3439dd3d8c0ce0f468, type: 2}
   - {fileID: 2100000, guid: 0869f8854ec7df945a616a3562a102a3, type: 2}
   - {fileID: 2100000, guid: 2dcce11614c4e41df944d119e26e527d, type: 2}

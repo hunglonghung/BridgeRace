@@ -2,9 +2,10 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Scriptable;
 using Unity.VisualScripting;
-public class BrickControl : MonoBehaviour
+namespace Scriptable
+{
+    public class BrickControl : MonoBehaviour
 {
     [SerializeField] private GameObject objectToInstantiate;
     private GameObject block;
@@ -39,4 +40,6 @@ public class BrickControl : MonoBehaviour
         GameObject newBlock = Instantiate(objectToInstantiate, transform.position, Quaternion.identity,gameObject.transform);
         newBlock.transform.position = objectToFollow.transform.position + Vector3.up * (float)(1f + blockCount * 0.5f) + Vector3.back * 1f;
     }
+}
+
 }

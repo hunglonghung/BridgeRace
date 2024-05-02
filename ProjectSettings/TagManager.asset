@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Block
+  - CheckPoint
+  - PlayerLimit
+  - Unblock
   layers:
   - Default
   - TransparentFX
