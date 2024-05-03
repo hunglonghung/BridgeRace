@@ -25,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] public float maxSlopeAngle;
     [SerializeField] public float directionMagnitute ;
     private RaycastHit slopeHit;
+    [SerializeField] float gravityForce;
 
     void FixedUpdate()
     {
@@ -40,16 +41,22 @@ public class PlayerMovement : MonoBehaviour
                 MoveOnSlope(MoveDirection);
                 break;
             case MovementState.Idle:
-                ChangeAnim("idle");
+                Idle();
                 break;
         }
-        rb.useGravity = !OnSlope();
         SpeedControl();
     }
+    //idle
+    private void Idle()
+    {
+        ChangeAnim("idle");
+        rb.velocity = Vector3.zero;
+    }
+    //state checking
     void CheckState()
     {
-        if(OnSlope()) currentState = MovementState.Slope;
-        else if(FloatingJoystick.Vertical == 0 && FloatingJoystick.Horizontal == 0) currentState = MovementState.Idle;
+        if(FloatingJoystick.Vertical == 0 && FloatingJoystick.Horizontal == 0) currentState = MovementState.Idle;
+        else if(OnSlope()) currentState = MovementState.Slope;
         else currentState = MovementState.Flat;
     }
 
@@ -64,6 +71,8 @@ public class PlayerMovement : MonoBehaviour
             rb.rotation = Quaternion.LookRotation(direction);
             ChangeAnim("running");
         }
+        currentState = MovementState.Idle;
+
     }
     //Slope Movement
 
@@ -72,10 +81,12 @@ public class PlayerMovement : MonoBehaviour
         if (OnSlope())
         {
             rb.AddForce(GetSlopeMoveDirection() * MoveSpeed * 20f, ForceMode.Force);
-
+            ChangeAnim("running");
             if (rb.velocity.y > 0)
-                rb.AddForce(Vector3.down * 500f, ForceMode.Force);
+                rb.AddForce(Vector3.down * gravityForce, ForceMode.Force);
         }
+        rb.rotation = Quaternion.LookRotation(direction);
+        
         // Vector3 slopeDirection = GetSlopeMoveDirection();
         // float gravity = 9.81f;  
         // Vector3 gravityForce = Vector3.down * gravity * Time.fixedDeltaTime;
@@ -84,7 +95,7 @@ public class PlayerMovement : MonoBehaviour
     }
     private bool OnSlope()
     {
-        if(Physics.Raycast(transform.position, Vector3.down, out slopeHit, 1 * 0.5f + 0.3f))
+        if(Physics.Raycast(transform.position, Vector3.down, out slopeHit, 10 * 0.5f + 0.3f))
         {
             float angle = Vector3.Angle(Vector3.up, slopeHit.normal);
             Debug.Log(angle < maxSlopeAngle && angle != 0);

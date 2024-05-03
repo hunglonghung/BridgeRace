@@ -7,16 +7,24 @@ namespace Scriptable
 {
     public class BrickControl : MonoBehaviour
 {
+    [SerializeField] ColorData colorData;
     [SerializeField] private GameObject objectToInstantiate;
     private GameObject block;
-    [SerializeField] public int blockCount;
-    [SerializeField] private GameObject objectToFollow;
+    [SerializeField] public static int blockCount;
+    [SerializeField] private GameObject objectParent;
+    [SerializeField] Renderer meshRenderer;
+
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Block" )
+        // Debug.Log(meshRenderer.material.color);
+        if(other.tag == "Block")
         {
-            AddBlock();
-            DeleteObject(other);
+            if(other.GetComponent<MeshRenderer>().material.color == meshRenderer.material.color)
+            {
+                SpawnBlock();
+                DeleteObject(other);
+            }
+            
         }
     }
 
@@ -30,15 +38,20 @@ namespace Scriptable
         }
     }
 
-    private void AddBlock()
+    private void SpawnBlock()
     {
         blockCount ++;
-        AddBlockOnPlayer();
+        SpawnBlockOnPlayer();
     }
-    private void AddBlockOnPlayer()
+    private void SpawnBlockOnPlayer()
     {
-        GameObject newBlock = Instantiate(objectToInstantiate, transform.position, Quaternion.identity,gameObject.transform);
-        newBlock.transform.position = objectToFollow.transform.position + Vector3.up * (float)(1f + blockCount * 0.5f) + Vector3.back * 1f;
+        Vector3 relativePosition = new Vector3(0, 1f + blockCount * 0.5f, 0);
+        Vector3 blockPosition = objectParent.transform.TransformPoint(relativePosition);
+        Transform blockParent = objectParent.transform;
+        GameObject newBlock = Instantiate(objectToInstantiate, blockPosition, Quaternion.identity, blockParent);
+        newBlock.transform.position = new Vector3(transform.position.x, transform.position.y + 1f + blockCount * 0.5f, transform.position.z - 0.7f);
+        newBlock.transform.rotation = Quaternion.Euler(0,90,90);
+        
     }
 }
 
