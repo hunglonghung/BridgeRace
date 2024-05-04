@@ -98,7 +98,7 @@ public class PlayerMovement : MonoBehaviour
         if(Physics.Raycast(transform.position, Vector3.down, out slopeHit, 10 * 0.5f + 0.3f))
         {
             float angle = Vector3.Angle(Vector3.up, slopeHit.normal);
-            Debug.Log(angle < maxSlopeAngle && angle != 0);
+            // Debug.Log(angle < maxSlopeAngle && angle != 0);
             return angle < maxSlopeAngle && angle != 0;
             
         }
@@ -130,4 +130,5 @@ public class PlayerMovement : MonoBehaviour
                 rb.velocity = rb.velocity.normalized * MoveSpeed;
         }
     }
+
 }

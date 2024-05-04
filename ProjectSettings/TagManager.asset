@@ -8,6 +8,9 @@ TagManager:
   - CheckPoint
   - PlayerLimit
   - Unblock
+  - Stage Start
+  - Stage Middle
+  - Stage End
   layers:
   - Default
   - TransparentFX

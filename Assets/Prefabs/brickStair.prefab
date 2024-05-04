@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3476054634317473156}
   - component: {fileID: 1619963441943704688}
   - component: {fileID: 3580445193090448688}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: brickStair
   m_TagString: Unblock
   m_Icon: {fileID: 0}
@@ -150,6 +150,10 @@ PrefabInstance:
     - target: {fileID: 60489623141697994, guid: 0947bb39b9f514bb197e32862d92da5c, type: 3}
       propertyPath: m_Name
       value: PlayerLimitCollider
+      objectReference: {fileID: 0}
+    - target: {fileID: 60489623141697994, guid: 0947bb39b9f514bb197e32862d92da5c, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2477319650282842706, guid: 0947bb39b9f514bb197e32862d92da5c, type: 3}
       propertyPath: m_LocalPosition.x

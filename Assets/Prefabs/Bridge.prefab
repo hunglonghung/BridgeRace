@@ -205,11 +205,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6112745117027898963, guid: c926647d3fc7b4471acf34d2e8716026, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 15.896508
+      value: 15.63
       objectReference: {fileID: 0}
     - target: {fileID: 6112745117027898963, guid: c926647d3fc7b4471acf34d2e8716026, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.9398365
+      value: 0.85
       objectReference: {fileID: 0}
     - target: {fileID: 6112745117027898963, guid: c926647d3fc7b4471acf34d2e8716026, type: 3}
       propertyPath: m_LocalRotation.w
@@ -337,7 +337,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7346820044110197704, guid: 177e93998e7734ca797ea98ddce4a082, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.6
+      value: 0.64
       objectReference: {fileID: 0}
     - target: {fileID: 7346820044110197704, guid: 177e93998e7734ca797ea98ddce4a082, type: 3}
       propertyPath: m_LocalPosition.z
@@ -395,28 +395,16 @@ PrefabInstance:
       value: BridgeStick (1)
       objectReference: {fileID: 0}
     - target: {fileID: 7549003457342723557, guid: d4ca0d9fd93e843999c816be552f3644, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.392319
-      objectReference: {fileID: 0}
-    - target: {fileID: 7549003457342723557, guid: d4ca0d9fd93e843999c816be552f3644, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.47608697
-      objectReference: {fileID: 0}
-    - target: {fileID: 7549003457342723557, guid: d4ca0d9fd93e843999c816be552f3644, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 10.82334
-      objectReference: {fileID: 0}
-    - target: {fileID: 7549003457342723557, guid: d4ca0d9fd93e843999c816be552f3644, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.54
       objectReference: {fileID: 0}
     - target: {fileID: 7549003457342723557, guid: d4ca0d9fd93e843999c816be552f3644, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.2
+      value: 0.93
       objectReference: {fileID: 0}
     - target: {fileID: 7549003457342723557, guid: d4ca0d9fd93e843999c816be552f3644, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.79
+      value: 5.5822
       objectReference: {fileID: 0}
     - target: {fileID: 7549003457342723557, guid: d4ca0d9fd93e843999c816be552f3644, type: 3}
       propertyPath: m_LocalRotation.w
@@ -470,7 +458,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5024082311658384195, guid: 7cf132f227b6e4baf88ddd502b7b19b1, type: 3}
       propertyPath: m_Name
-      value: FinishDoor
+      value: PlayerLimitCollider
       objectReference: {fileID: 0}
     - target: {fileID: 5024082311658384195, guid: 7cf132f227b6e4baf88ddd502b7b19b1, type: 3}
       propertyPath: m_TagString
@@ -564,11 +552,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6112745117027898963, guid: c926647d3fc7b4471acf34d2e8716026, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 20.9
+      value: 20.633492
       objectReference: {fileID: 0}
     - target: {fileID: 6112745117027898963, guid: c926647d3fc7b4471acf34d2e8716026, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10.7
+      value: 10.340163
       objectReference: {fileID: 0}
     - target: {fileID: 6112745117027898963, guid: c926647d3fc7b4471acf34d2e8716026, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1202,28 +1190,16 @@ PrefabInstance:
       value: BridgeStick (2)
       objectReference: {fileID: 0}
     - target: {fileID: 7549003457342723557, guid: d4ca0d9fd93e843999c816be552f3644, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.392319
-      objectReference: {fileID: 0}
-    - target: {fileID: 7549003457342723557, guid: d4ca0d9fd93e843999c816be552f3644, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.47608697
-      objectReference: {fileID: 0}
-    - target: {fileID: 7549003457342723557, guid: d4ca0d9fd93e843999c816be552f3644, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 10.82334
-      objectReference: {fileID: 0}
-    - target: {fileID: 7549003457342723557, guid: d4ca0d9fd93e843999c816be552f3644, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.39
       objectReference: {fileID: 0}
     - target: {fileID: 7549003457342723557, guid: d4ca0d9fd93e843999c816be552f3644, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.2
+      value: 0.93000054
       objectReference: {fileID: 0}
     - target: {fileID: 7549003457342723557, guid: d4ca0d9fd93e843999c816be552f3644, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.79
+      value: 5.5822
       objectReference: {fileID: 0}
     - target: {fileID: 7549003457342723557, guid: d4ca0d9fd93e843999c816be552f3644, type: 3}
       propertyPath: m_LocalRotation.w

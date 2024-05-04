@@ -9,9 +9,9 @@ public class ColorChange : MonoBehaviour
 
     private void OnTriggerEnter(Collider other) 
     {
-        Debug.Log("Triggered");
-        Debug.Log(BrickMeshRenderer.material.color);
-        Debug.Log(BrickMeshRenderer.material.color != PlayerMeshRenderer.sharedMaterial.color);
+        // Debug.Log("Triggered");
+        // Debug.Log(BrickMeshRenderer.material.color);
+        // Debug.Log(BrickMeshRenderer.material.color != PlayerMeshRenderer.sharedMaterial.color);
         if(other.tag == "Player")
         {
             if(BrickMeshRenderer.material.color != PlayerMeshRenderer.sharedMaterial.color)
