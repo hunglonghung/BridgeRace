@@ -11,7 +11,8 @@ public class PlayerMovement : MonoBehaviour
     {
         Flat,
         Slope,
-        Idle
+        Idle,
+        Win
     }
     [Header("Movement")]
     public float MoveSpeed;
@@ -26,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] public float directionMagnitute ;
     private RaycastHit slopeHit;
     [SerializeField] float gravityForce;
+    [SerializeField] bool isWin;
 
     void FixedUpdate()
     {
@@ -34,6 +36,9 @@ public class PlayerMovement : MonoBehaviour
 
         switch (currentState)
         {
+            case MovementState.Win:
+                Win();
+                break;
             case MovementState.Flat:
                 MoveOnFlatGround(MoveDirection);
                 break;
@@ -55,7 +60,8 @@ public class PlayerMovement : MonoBehaviour
     //state checking
     void CheckState()
     {
-        if(FloatingJoystick.Vertical == 0 && FloatingJoystick.Horizontal == 0) currentState = MovementState.Idle;
+        if(isWin) currentState = MovementState.Win;
+        else if(FloatingJoystick.Vertical == 0 && FloatingJoystick.Horizontal == 0) currentState = MovementState.Idle;
         else if(OnSlope()) currentState = MovementState.Slope;
         else currentState = MovementState.Flat;
     }
@@ -128,6 +134,21 @@ public class PlayerMovement : MonoBehaviour
         {
             if (rb.velocity.magnitude > MoveSpeed)
                 rb.velocity = rb.velocity.normalized * MoveSpeed;
+        }
+    }
+    //Winning
+    private void Win()
+    {
+        ChangeAnim("dancing");
+        rb.velocity = Vector3.zero;
+    }
+    private void OnTriggerEnter(Collider other) 
+    {
+        Debug.Log(other.tag);
+        if(other.tag == "Finish")
+        {
+            isWin = true;
+            currentState = MovementState.Win;
         }
     }
 

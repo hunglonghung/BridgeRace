@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 
 namespace Scriptable
@@ -9,34 +10,39 @@ namespace Scriptable
         public Material material;
         public GameObject stageFinishCheckPoint;
         [SerializeField] public bool canSpawn = false;
+        [SerializeField] public float RandomizeColorTimer = 0f;
 
         void LateUpdate() 
         {
-            int randomTime = Random.Range(2,10);
-            // Debug.Log(gameObject.GetComponent<Renderer>().material);
-            // Debug.Log(material);
-            // Debug.Log(gameObject.GetComponent<Renderer>().material == material);
+            int randomTime = Random.Range(3,6);
+            //if block is taken
             if(material.color == gameObject.GetComponent<Renderer>().material.color)
             {
-                Invoke("RandomizeColor",randomTime);
+                RandomizeColorTimer += Time.deltaTime;
+                if(RandomizeColorTimer > randomTime )
+                {
+                    RandomizeColor();
+                    RandomizeColorTimer = 0;
+                }
             }
+            
             if(stageFinishCheckPoint != null)
             {
                 canSpawn = stageFinishCheckPoint.GetComponent<StageFinish>().IsPassed;
             }
-            // if(canSpawn == false)
+            if(canSpawn == false)
+            {
+                ChangeColor(ColorType.None);
+            }
+            // else
             // {
-            //     ChangeColor(ColorType.None);
-            // }
-            // // else
-            // // {
-            // //     int randomNumber = Random.Range(0, 4);
-            // //     if(randomNumber == 1)
-            // //     {
-            // //         ChangeColor(ColorType.Orange);
-            // //     }
+            //     int randomNumber = Random.Range(0, 4);
+            //     if(randomNumber == 1)
+            //     {
+            //         ChangeColor(ColorType.Orange);
+            //     }
                 
-            // // }
+            // }
         }
     }
 }

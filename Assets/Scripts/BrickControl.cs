@@ -27,17 +27,31 @@ namespace Scriptable
             }
             
         }
-    }
-    //delete the brick collected
-    private void DeleteObject(Collider block)
-    {
-        // block.gameObject.SetActive(false);
-        Character characterComponent = block.GetComponent<Character>();
-        if (characterComponent != null)
+        if(other.tag == "Finish")
         {
-            characterComponent.ChangeColor(ColorType.None);
+            clearBlock();
+            transform.Translate(Vector3.forward * 5f);
         }
     }
+
+        private void clearBlock()
+        {
+            for(int i = 0; i <= blockList.Count - 1; i++)
+            {
+                blockList[i].SetActive(false);
+            }
+        }
+
+        //delete the brick collected
+        private void DeleteObject(Collider block)
+        {
+            // block.gameObject.SetActive(false);
+            Character characterComponent = block.GetComponent<Character>();
+            if (characterComponent != null)
+            {
+                characterComponent.ChangeColor(ColorType.None);
+            }
+        }
     //Spawning
     private void SpawnBlock()
     {
