@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Character : MonoBehaviour
+public class EnemyCharacter : MonoBehaviour
 {
-    private IState<Character> currentState;
+    private IState<EnemyCharacter> currentState;
 
     private void Start()
     {
@@ -20,7 +20,7 @@ public class Character : MonoBehaviour
         }
     }
 
-    public void ChangeState(IState<Character> state)
+    public void ChangeState(IState<EnemyCharacter> state)
     {
         if (currentState != null)
         {

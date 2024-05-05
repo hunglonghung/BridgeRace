@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7529454361725416343}
   - component: {fileID: 821862340737218856}
   - component: {fileID: 3093820354638115053}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BulletPoint (5)
   m_TagString: Block
   m_Icon: {fileID: 0}
@@ -142,6 +142,9 @@ MonoBehaviour:
   color: 0
   ObjectType: 0
   material: {fileID: 2100000, guid: 86fa2d836894a4522bee530663fd3f47, type: 2}
+  stageFinishCheckPoint: {fileID: 0}
+  canSpawn: 0
+  RandomizeColorTimer: 0
 --- !u!1 &936002077803876702
 GameObject:
   m_ObjectHideFlags: 0
@@ -156,7 +159,7 @@ GameObject:
   - component: {fileID: 788827549933251551}
   - component: {fileID: 1688540008028374938}
   - component: {fileID: 5392418528825783170}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BulletPoint (2)
   m_TagString: Block
   m_Icon: {fileID: 0}
@@ -284,6 +287,9 @@ MonoBehaviour:
   color: 0
   ObjectType: 0
   material: {fileID: 2100000, guid: 86fa2d836894a4522bee530663fd3f47, type: 2}
+  stageFinishCheckPoint: {fileID: 0}
+  canSpawn: 0
+  RandomizeColorTimer: 0
 --- !u!1 &3139357922633648033
 GameObject:
   m_ObjectHideFlags: 0
@@ -298,7 +304,7 @@ GameObject:
   - component: {fileID: 3033219357260203757}
   - component: {fileID: 8796200507343066879}
   - component: {fileID: 3197796976565610161}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BulletPoint (8)
   m_TagString: Block
   m_Icon: {fileID: 0}
@@ -426,6 +432,9 @@ MonoBehaviour:
   color: 0
   ObjectType: 0
   material: {fileID: 2100000, guid: 86fa2d836894a4522bee530663fd3f47, type: 2}
+  stageFinishCheckPoint: {fileID: 0}
+  canSpawn: 0
+  RandomizeColorTimer: 0
 --- !u!1 &3667518418587318010
 GameObject:
   m_ObjectHideFlags: 0
@@ -440,7 +449,7 @@ GameObject:
   - component: {fileID: 1084408154333398967}
   - component: {fileID: 2743112930043162179}
   - component: {fileID: 4513834239289537372}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BulletPoint (12)
   m_TagString: Block
   m_Icon: {fileID: 0}
@@ -568,6 +577,9 @@ MonoBehaviour:
   color: 0
   ObjectType: 0
   material: {fileID: 2100000, guid: 86fa2d836894a4522bee530663fd3f47, type: 2}
+  stageFinishCheckPoint: {fileID: 0}
+  canSpawn: 0
+  RandomizeColorTimer: 0
 --- !u!1 &3671015816193016462
 GameObject:
   m_ObjectHideFlags: 0
@@ -582,7 +594,7 @@ GameObject:
   - component: {fileID: 5832232584118077360}
   - component: {fileID: 462646571011001370}
   - component: {fileID: 2377652278497988760}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BulletPoint (4)
   m_TagString: Block
   m_Icon: {fileID: 0}
@@ -710,6 +722,9 @@ MonoBehaviour:
   color: 0
   ObjectType: 0
   material: {fileID: 2100000, guid: 86fa2d836894a4522bee530663fd3f47, type: 2}
+  stageFinishCheckPoint: {fileID: 0}
+  canSpawn: 0
+  RandomizeColorTimer: 0
 --- !u!1 &4103920778410505707
 GameObject:
   m_ObjectHideFlags: 0
@@ -719,7 +734,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3218456178440107797}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Blocks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -771,7 +786,7 @@ GameObject:
   - component: {fileID: 4923156099520889027}
   - component: {fileID: 7240775808492154202}
   - component: {fileID: 2138942025986637164}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BulletPoint (11)
   m_TagString: Block
   m_Icon: {fileID: 0}
@@ -899,6 +914,9 @@ MonoBehaviour:
   color: 0
   ObjectType: 0
   material: {fileID: 2100000, guid: 86fa2d836894a4522bee530663fd3f47, type: 2}
+  stageFinishCheckPoint: {fileID: 0}
+  canSpawn: 0
+  RandomizeColorTimer: 0
 --- !u!1 &5010821657084067146
 GameObject:
   m_ObjectHideFlags: 0
@@ -913,7 +931,7 @@ GameObject:
   - component: {fileID: 4651091723784765101}
   - component: {fileID: 5092953669728379963}
   - component: {fileID: 3965443006567736030}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BulletPoint
   m_TagString: Block
   m_Icon: {fileID: 0}
@@ -1041,6 +1059,9 @@ MonoBehaviour:
   color: 0
   ObjectType: 0
   material: {fileID: 2100000, guid: 86fa2d836894a4522bee530663fd3f47, type: 2}
+  stageFinishCheckPoint: {fileID: 0}
+  canSpawn: 0
+  RandomizeColorTimer: 0
 --- !u!1 &5231513350474741126
 GameObject:
   m_ObjectHideFlags: 0
@@ -1055,7 +1076,7 @@ GameObject:
   - component: {fileID: 3200898106915724315}
   - component: {fileID: 7698247633231291008}
   - component: {fileID: 3153112378695978743}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BulletPoint (14)
   m_TagString: Block
   m_Icon: {fileID: 0}
@@ -1183,6 +1204,9 @@ MonoBehaviour:
   color: 0
   ObjectType: 0
   material: {fileID: 2100000, guid: 86fa2d836894a4522bee530663fd3f47, type: 2}
+  stageFinishCheckPoint: {fileID: 0}
+  canSpawn: 0
+  RandomizeColorTimer: 0
 --- !u!1 &5457021028971000097
 GameObject:
   m_ObjectHideFlags: 0
@@ -1197,7 +1221,7 @@ GameObject:
   - component: {fileID: 6779341917830723351}
   - component: {fileID: 1856097917343645991}
   - component: {fileID: 2517647825544187764}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BulletPoint (13)
   m_TagString: Block
   m_Icon: {fileID: 0}
@@ -1325,6 +1349,9 @@ MonoBehaviour:
   color: 0
   ObjectType: 0
   material: {fileID: 2100000, guid: 86fa2d836894a4522bee530663fd3f47, type: 2}
+  stageFinishCheckPoint: {fileID: 0}
+  canSpawn: 0
+  RandomizeColorTimer: 0
 --- !u!1 &5538598911092561555
 GameObject:
   m_ObjectHideFlags: 0
@@ -1339,7 +1366,7 @@ GameObject:
   - component: {fileID: 5249869191102445180}
   - component: {fileID: 229354008677125974}
   - component: {fileID: 4796643876934821961}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BulletPoint (9)
   m_TagString: Block
   m_Icon: {fileID: 0}
@@ -1467,6 +1494,9 @@ MonoBehaviour:
   color: 0
   ObjectType: 0
   material: {fileID: 2100000, guid: 86fa2d836894a4522bee530663fd3f47, type: 2}
+  stageFinishCheckPoint: {fileID: 0}
+  canSpawn: 0
+  RandomizeColorTimer: 0
 --- !u!1 &6018650208613532880
 GameObject:
   m_ObjectHideFlags: 0
@@ -1481,7 +1511,7 @@ GameObject:
   - component: {fileID: 434228662566164745}
   - component: {fileID: 9035189579992642638}
   - component: {fileID: 8597931188327103789}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BulletPoint
   m_TagString: Block
   m_Icon: {fileID: 0}
@@ -1609,6 +1639,9 @@ MonoBehaviour:
   color: 0
   ObjectType: 0
   material: {fileID: 2100000, guid: 86fa2d836894a4522bee530663fd3f47, type: 2}
+  stageFinishCheckPoint: {fileID: 0}
+  canSpawn: 0
+  RandomizeColorTimer: 0
 --- !u!1 &6895289306009971228
 GameObject:
   m_ObjectHideFlags: 0
@@ -1623,7 +1656,7 @@ GameObject:
   - component: {fileID: 3988397473228580982}
   - component: {fileID: 2231098337900443025}
   - component: {fileID: 1500137805578617895}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BulletPoint (10)
   m_TagString: Block
   m_Icon: {fileID: 0}
@@ -1751,6 +1784,9 @@ MonoBehaviour:
   color: 0
   ObjectType: 0
   material: {fileID: 2100000, guid: 86fa2d836894a4522bee530663fd3f47, type: 2}
+  stageFinishCheckPoint: {fileID: 0}
+  canSpawn: 0
+  RandomizeColorTimer: 0
 --- !u!1 &7347592084912968830
 GameObject:
   m_ObjectHideFlags: 0
@@ -1765,7 +1801,7 @@ GameObject:
   - component: {fileID: 5014989887406761364}
   - component: {fileID: 66088603180991216}
   - component: {fileID: 4997425429549969197}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BulletPoint (7)
   m_TagString: Block
   m_Icon: {fileID: 0}
@@ -1893,6 +1929,9 @@ MonoBehaviour:
   color: 0
   ObjectType: 0
   material: {fileID: 2100000, guid: 86fa2d836894a4522bee530663fd3f47, type: 2}
+  stageFinishCheckPoint: {fileID: 0}
+  canSpawn: 0
+  RandomizeColorTimer: 0
 --- !u!1 &7628448696742494217
 GameObject:
   m_ObjectHideFlags: 0
@@ -1907,7 +1946,7 @@ GameObject:
   - component: {fileID: 3859332546002450182}
   - component: {fileID: 1327869170720923314}
   - component: {fileID: 6720989432592042727}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BulletPoint (6)
   m_TagString: Block
   m_Icon: {fileID: 0}
@@ -2035,6 +2074,9 @@ MonoBehaviour:
   color: 0
   ObjectType: 0
   material: {fileID: 2100000, guid: 86fa2d836894a4522bee530663fd3f47, type: 2}
+  stageFinishCheckPoint: {fileID: 0}
+  canSpawn: 0
+  RandomizeColorTimer: 0
 --- !u!1 &8198420681826874786
 GameObject:
   m_ObjectHideFlags: 0
@@ -2049,7 +2091,7 @@ GameObject:
   - component: {fileID: 1027746886445747785}
   - component: {fileID: 7179677453598124388}
   - component: {fileID: 4392320131015979518}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BulletPoint (1)
   m_TagString: Block
   m_Icon: {fileID: 0}
@@ -2177,6 +2219,9 @@ MonoBehaviour:
   color: 0
   ObjectType: 0
   material: {fileID: 2100000, guid: 86fa2d836894a4522bee530663fd3f47, type: 2}
+  stageFinishCheckPoint: {fileID: 0}
+  canSpawn: 0
+  RandomizeColorTimer: 0
 --- !u!1 &8550879816584844619
 GameObject:
   m_ObjectHideFlags: 0
@@ -2191,7 +2236,7 @@ GameObject:
   - component: {fileID: 4203474589630120539}
   - component: {fileID: 2197627375726138134}
   - component: {fileID: 8338232750684052427}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BulletPoint (3)
   m_TagString: Block
   m_Icon: {fileID: 0}
@@ -2319,3 +2364,6 @@ MonoBehaviour:
   color: 0
   ObjectType: 0
   material: {fileID: 2100000, guid: 86fa2d836894a4522bee530663fd3f47, type: 2}
+  stageFinishCheckPoint: {fileID: 0}
+  canSpawn: 0
+  RandomizeColorTimer: 0
