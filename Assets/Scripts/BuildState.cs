@@ -11,7 +11,7 @@ public class BuildState : IState<EnemyCharacter>
 
     public void OnExecute(EnemyCharacter t)
     {
-
+        
     }
 
     public void OnExit(EnemyCharacter t)

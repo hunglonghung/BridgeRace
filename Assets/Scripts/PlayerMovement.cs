@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.EventSystems;
 
 public class PlayerMovement : MonoBehaviour
@@ -15,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
         Win
     }
     [Header("Movement")]
+    [SerializeField] public bool hasMoved = false;
     public float MoveSpeed;
     public FloatingJoystick FloatingJoystick;
     public Rigidbody rb;
@@ -29,6 +31,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float gravityForce;
     [SerializeField] bool isWin;
 
+
+
     void FixedUpdate()
     {
         CheckState();
@@ -41,15 +45,18 @@ public class PlayerMovement : MonoBehaviour
                 break;
             case MovementState.Flat:
                 MoveOnFlatGround(MoveDirection);
+                hasMoved = true;
                 break;
             case MovementState.Slope:
                 MoveOnSlope(MoveDirection);
+                hasMoved = true;
                 break;
             case MovementState.Idle:
                 Idle();
                 break;
         }
         SpeedControl();
+
     }
     //idle
     private void Idle()

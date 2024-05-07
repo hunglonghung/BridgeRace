@@ -2,27 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IdleState : IState<EnemyCharacter>
+public class CollectState : IState<EnemyCharacter>
 {
-    float timer;
     public void OnEnter(EnemyCharacter t)
     {
-        t.ChangeAnim("idle");
-        timer = 0;
+        t.SetTarget();
     }
 
     public void OnExecute(EnemyCharacter t)
     {
-        timer += Time.deltaTime;
-        if(timer > 1.5f)
-        {
-            t.ChangeState(new CollectState());
-        }
+        t.MoveToTarget();
+        if()
     }
 
     public void OnExit(EnemyCharacter t)
     {
 
     }
+    
 
 }
