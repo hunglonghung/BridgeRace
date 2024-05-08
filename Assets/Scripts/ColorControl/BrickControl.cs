@@ -60,7 +60,7 @@ namespace Scriptable
     }
     private void SpawnBlockOnPlayer()
     {
-        Vector3 newPosition = new Vector3(0f, 0.58f * (blockCount-1), 0);
+        Vector3 newPosition = new Vector3(0f, 0.58f * (blockCount - 1), 0);
         Vector3 blockPosition = objectParent.transform.localPosition + newPosition;
         GameObject newBlock = Instantiate(objectToInstantiate, blockPosition, Quaternion.identity, objectParent.transform);
         newBlock.transform.localPosition = newPosition;

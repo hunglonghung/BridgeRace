@@ -11,8 +11,9 @@ public class CollectState : IState<EnemyCharacter>
 
     public void OnExecute(EnemyCharacter t)
     {
-        t.MoveToTarget();
-        if()
+        t.ChangeAnim("running");
+        t.MoveToTarget(t.targetObjects);
+        
     }
 
     public void OnExit(EnemyCharacter t)
