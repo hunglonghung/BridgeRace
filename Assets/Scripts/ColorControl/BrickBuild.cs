@@ -11,7 +11,7 @@ public class BrickBuild : MonoBehaviour
     private void OnCollisionEnter(Collision other) 
     {
 
-        if(other.gameObject.tag == "Player")
+        if(other.gameObject.tag == "Player" || other.gameObject.tag == "Enemy")
         {
             BrickControl = other.gameObject.GetComponent<BrickControl>();
             if(BrickControl.blockCount > 0)

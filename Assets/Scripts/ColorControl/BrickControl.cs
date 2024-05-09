@@ -17,13 +17,14 @@ namespace Scriptable
     //trigger
     private void OnTriggerEnter(Collider other)
     {
-        // Debug.Log(meshRenderer.material.color);
+        Debug.Log(other.GetComponent<MeshRenderer>().material.color == meshRenderer.material.color);
         if(other.tag == "Block")
         {
             if(other.GetComponent<MeshRenderer>().material.color == meshRenderer.material.color)
             {
                 SpawnBlock();
                 DeleteObject(other);
+                
             }
             
         }

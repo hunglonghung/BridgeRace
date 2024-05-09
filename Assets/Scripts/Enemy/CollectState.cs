@@ -12,7 +12,7 @@ public class CollectState : IState<EnemyCharacter>
     public void OnExecute(EnemyCharacter t)
     {
         t.ChangeAnim("running");
-        t.MoveToTarget(t.targetObjects);
+        t.MoveToTarget();
         
     }
 

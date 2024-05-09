@@ -6,50 +6,24 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.EventSystems;
 
-public class PlayerMovement : MonoBehaviour
-{
-    public enum MovementState
-    {
-        Flat,
-        Slope,
-        Idle,
-        Win
-    }
-    [Header("Movement")]
-    [SerializeField] public bool hasMoved = false;
-    public float MoveSpeed;
+public class PlayerMovement : BaseMovement
+{   
     public FloatingJoystick FloatingJoystick;
-    public Rigidbody rb;
-    public Animator anim;
-    public string currentAnimName;
-    public MovementState currentState = MovementState.Flat;
-    public Vector3 MoveDirection;
-    [Header("Slope Handling")]
-    [SerializeField] public float maxSlopeAngle;
-    [SerializeField] public float directionMagnitute ;
-    private RaycastHit slopeHit;
-    [SerializeField] float gravityForce;
-    [SerializeField] bool isWin;
-
-
-
     void FixedUpdate()
     {
         CheckState();
         MoveDirection = Vector3.forward * FloatingJoystick.Vertical + Vector3.right * FloatingJoystick.Horizontal;
 
-        switch (currentState)
+        switch (movementState)
         {
             case MovementState.Win:
                 Win();
                 break;
             case MovementState.Flat:
                 MoveOnFlatGround(MoveDirection);
-                hasMoved = true;
                 break;
             case MovementState.Slope:
                 MoveOnSlope(MoveDirection);
-                hasMoved = true;
                 break;
             case MovementState.Idle:
                 Idle();
@@ -58,19 +32,13 @@ public class PlayerMovement : MonoBehaviour
         SpeedControl();
 
     }
-    //idle
-    private void Idle()
-    {
-        ChangeAnim("idle");
-        rb.velocity = Vector3.zero;
-    }
     //state checking
     void CheckState()
     {
-        if(isWin) currentState = MovementState.Win;
-        else if(FloatingJoystick.Vertical == 0 && FloatingJoystick.Horizontal == 0) currentState = MovementState.Idle;
-        else if(OnSlope()) currentState = MovementState.Slope;
-        else currentState = MovementState.Flat;
+        if(isWin) movementState = MovementState.Win;
+        else if(FloatingJoystick.Vertical == 0 && FloatingJoystick.Horizontal == 0) movementState = MovementState.Idle;
+        else if(OnSlope()) movementState = MovementState.Slope;
+        else movementState = MovementState.Flat;
     }
 
 
@@ -84,55 +52,10 @@ public class PlayerMovement : MonoBehaviour
             rb.rotation = Quaternion.LookRotation(direction);
             ChangeAnim("running");
         }
-        currentState = MovementState.Idle;
+        movementState = MovementState.Idle;
 
     }
-    //Slope Movement
 
-    void MoveOnSlope(Vector3 direction)
-    {
-        if (OnSlope())
-        {
-            rb.AddForce(GetSlopeMoveDirection() * MoveSpeed * 20f, ForceMode.Force);
-            ChangeAnim("running");
-            if (rb.velocity.y > 0)
-                rb.AddForce(Vector3.down * gravityForce, ForceMode.Force);
-        }
-        rb.rotation = Quaternion.LookRotation(direction);
-        
-        // Vector3 slopeDirection = GetSlopeMoveDirection();
-        // float gravity = 9.81f;  
-        // Vector3 gravityForce = Vector3.down * gravity * Time.fixedDeltaTime;
-        // float slopeSpeedAdjustment = 1.5f; 
-        // rb.velocity = (slopeDirection * MoveSpeed * slopeSpeedAdjustment) + gravityForce;
-    }
-    private bool OnSlope()
-    {
-        if(Physics.Raycast(transform.position, Vector3.down, out slopeHit, 10 * 0.5f + 0.3f))
-        {
-            float angle = Vector3.Angle(Vector3.up, slopeHit.normal);
-            // Debug.Log(angle < maxSlopeAngle && angle != 0);
-            return angle < maxSlopeAngle && angle != 0;
-            
-        }
-
-        return false;
-    }
-
-    private Vector3 GetSlopeMoveDirection()
-    {
-        return Vector3.ProjectOnPlane(MoveDirection, slopeHit.normal).normalized;
-    }
-    //Animation
-    protected void ChangeAnim(string animName)
-    {
-        if (currentAnimName != animName)
-        {
-            anim.ResetTrigger(animName);
-            currentAnimName = animName;
-            anim.SetTrigger(currentAnimName);
-        }
-    }
     //Speed Control
     private void SpeedControl()
     {
@@ -155,7 +78,7 @@ public class PlayerMovement : MonoBehaviour
         if(other.tag == "Finish")
         {
             isWin = true;
-            currentState = MovementState.Win;
+            movementState = MovementState.Win;
         }
     }
 
