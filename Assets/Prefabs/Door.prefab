@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 527883800140270981}
   - component: {fileID: 22905297048819902}
   - component: {fileID: 1333801832824802563}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -114,7 +114,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6112745117027898963}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -150,7 +150,7 @@ GameObject:
   - component: {fileID: 2625507891077238164}
   - component: {fileID: 5488023257839789504}
   - component: {fileID: 6576939471023461643}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -255,7 +255,7 @@ GameObject:
   - component: {fileID: 3438812894703987749}
   - component: {fileID: 5667880669105545576}
   - component: {fileID: 3528680671323146849}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -360,7 +360,7 @@ GameObject:
   - component: {fileID: 7375301744871259454}
   - component: {fileID: 3143161033497369295}
   - component: {fileID: 4446612524599699277}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -465,7 +465,7 @@ GameObject:
   - component: {fileID: 8379910404194381043}
   - component: {fileID: 8981217260737881066}
   - component: {fileID: 3740204234250486228}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -570,7 +570,7 @@ GameObject:
   - component: {fileID: 3786826384450305641}
   - component: {fileID: 3268934537195364741}
   - component: {fileID: 236564043863509064}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -672,7 +672,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1664098287644030027}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Door Stick (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -708,7 +708,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3382038838600656153}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Door Stick
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -747,7 +747,7 @@ GameObject:
   - component: {fileID: 4811032230335845065}
   - component: {fileID: 5589680918506692153}
   - component: {fileID: 8087183623240429500}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -852,7 +852,7 @@ GameObject:
   - component: {fileID: 1258814895694088642}
   - component: {fileID: 114336112723947760}
   - component: {fileID: 7488308133209266868}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -957,7 +957,7 @@ GameObject:
   - component: {fileID: 1933280941990880879}
   - component: {fileID: 2588021221998168956}
   - component: {fileID: 5878377177873261030}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1062,7 +1062,7 @@ GameObject:
   - component: {fileID: 8475145308668780992}
   - component: {fileID: 6995738503453166029}
   - component: {fileID: 919036949000779781}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}

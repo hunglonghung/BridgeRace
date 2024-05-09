@@ -1308,6 +1308,14 @@ PrefabInstance:
       propertyPath: objectToInstantiate
       value: 
       objectReference: {fileID: 1245127408}
+    - target: {fileID: 4238737017937015603, guid: 103bb56b796e04a1db250098f0d85ffc, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4692154481803443602, guid: 103bb56b796e04a1db250098f0d85ffc, type: 3}
+      propertyPath: MoveSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4692154481803443602, guid: 103bb56b796e04a1db250098f0d85ffc, type: 3}
       propertyPath: gravityForce
       value: 100

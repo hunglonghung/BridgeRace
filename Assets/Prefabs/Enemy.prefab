@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4908390777013436645}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: BlockHandler (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -242,14 +242,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd092b610e66ce84ba7819e93f8d4bd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveSpeed: 10
+  MoveSpeed: 1
   rb: {fileID: 4344151719915946656}
   anim: {fileID: 1600095643121705911}
   currentAnimName: 
-  MoveDirection: {x: 0, y: 0, z: 0}
   maxSlopeAngle: 180
   directionMagnitute: 0
   gravityForce: 100
+  movementState: 0
+  MoveDirection: {x: 0, y: 0, z: 0}
   isWin: 0
   agent: {fileID: 2822939025849280994}
   sphereRadius: 30
@@ -258,8 +259,7 @@ MonoBehaviour:
   blockCount: 0
   blockIndex: 0
   material: {fileID: 2100000, guid: 79218098b3fefa3439dd3d8c0ce0f468, type: 2}
-  targetUnblockObjects: []
-  bridgeIndex: 0
+  FinishPoint: {fileID: 0}
 --- !u!54 &4344151719915946656
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3476054634317473156}
   - component: {fileID: 1619963441943704688}
   - component: {fileID: 3580445193090448688}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: brickStair
   m_TagString: Unblock
   m_Icon: {fileID: 0}
@@ -139,6 +139,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BrickMeshRenderer: {fileID: 1159965342920035954}
   PlayerMeshRenderer: {fileID: 8968900329971827989, guid: c97d05f9338d74bdba57b03c1fb36592, type: 3}
+  EnemyMeshRenderer: {fileID: 0}
 --- !u!1001 &5003436254122861193
 PrefabInstance:
   m_ObjectHideFlags: 0

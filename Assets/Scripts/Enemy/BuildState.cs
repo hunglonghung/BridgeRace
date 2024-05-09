@@ -6,12 +6,12 @@ public class BuildState : IState<EnemyCharacter>
 {
     public void OnEnter(EnemyCharacter t)
     {
-        t.SetBridgeTarget();
+        t.MoveToFinishPoint();
     }
 
     public void OnExecute(EnemyCharacter t)
     {
-        t.BridgeBuild();
+        t.CheckBuildingState();
     }
 
     public void OnExit(EnemyCharacter t)

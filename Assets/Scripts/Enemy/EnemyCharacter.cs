@@ -17,9 +17,8 @@
         [SerializeField] public int blockCount;
         [SerializeField] public int blockIndex = 0;
         [SerializeField] Material material;
-        [Header("Bridge control")]
-        [SerializeField] public List<GameObject> targetUnblockObjects;
-        [SerializeField] public int bridgeIndex = 0;
+        [Header("Finish")]
+        [SerializeField] GameObject FinishPoint;
         private void Start()
         {
             ChangeState(new IdleState());
@@ -28,17 +27,11 @@
         // Update is called once per frame
         void Update()
         {
-            CheckState();
-            MoveDirection = agent.desiredVelocity.normalized;
             if (isWin || currentState == null) return;
             {
                 Debug.Log(currentState);
                 currentState.OnExecute(this);
-            }
-            if(movementState == MovementState.Slope)
-            {
-                MoveOnSlope(MoveDirection);
-            }
+            }   
             
         }
         //Change State
@@ -57,14 +50,6 @@
                 currentState.OnEnter(this);
             }
         }
-        //check movementState
-        void CheckState()
-    {
-        if(isWin) movementState = MovementState.Win;
-        else if(OnSlope()) movementState = MovementState.Slope;
-        else if(rb.velocity.magnitude != 0) movementState = MovementState.Flat;
-        else movementState = MovementState.Idle;
-    }
         // Collect block
         public void SetTarget()
         {
@@ -75,17 +60,13 @@
 
             foreach (var hitCollider in hitColliders)
             {
-                Debug.Log(hitCollider.gameObject.name);
-                Debug.Log(hitCollider.gameObject.tag);
+                // Debug.Log(hitCollider.gameObject.name);
+                // Debug.Log(hitCollider.gameObject.tag);
                 Color hitColliderColor = hitCollider.GetComponent<MeshRenderer>().material.color;
                 if(hitCollider.gameObject.CompareTag("Block") && material.color == hitColliderColor)
                 {
                     Debug.Log(hitColliderColor);
                     targetObjects.Add(hitCollider.gameObject); 
-                }
-                if(hitCollider.gameObject.CompareTag("Unblock"))
-                {
-                    targetUnblockObjects.Add(hitCollider.gameObject);
                 }
             }
 
@@ -97,7 +78,7 @@
             if(targetObjects.Count > 0)
             {
                 target = targetObjects[0]; 
-                float speed = 5f; 
+                float speed = 10f; 
                 float step = speed * Time.deltaTime; 
                 agent.SetDestination(target.transform.position);
                 // Debug.Log(agent.remainingDistance);
@@ -120,39 +101,18 @@
             
         }
         // Build brick
-        public void SetBridgeTarget()
+        public void MoveToFinishPoint()
         {
-            Vector3 center = transform.position; 
-            float radius = 30f; 
-            Collider[] hitColliders = Physics.OverlapSphere(center, radius);
-            targetUnblockObjects = new List<GameObject>(); 
-
-            foreach (var hitCollider in hitColliders)
-            {
-                if(hitCollider.gameObject.CompareTag("Unblock"))
-                {
-                    targetUnblockObjects.Add(hitCollider.gameObject);
-                }
-            }
+            agent.SetDestination(FinishPoint.transform.position);
         }
-        public void BridgeBuild()
+        public void CheckBuildingState()
         {
-            blockCount = GetComponent<BrickControl>().blockCount;
+            blockCount =  blockCount = GetComponent<BrickControl>().blockCount;
             if(blockCount == 0)
             {
                 ChangeState(new CollectState());
             }
-            if(targetUnblockObjects.Count > 0)
-            {
-                target = targetUnblockObjects[0]; 
-                float speed = 0.5f; 
-                float step = speed * Time.deltaTime; 
-                agent.SetDestination(target.transform.position);
-                if(agent.remainingDistance < 1.5f)
-                {
-                    targetObjects.RemoveAt(0);
-                }
-            }
+            
         }
         // Win
         private void Win()

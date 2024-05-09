@@ -12,7 +12,7 @@ namespace Scriptable
     private GameObject block;
     [SerializeField] public int blockCount;
     [SerializeField] private GameObject objectParent;
-    [SerializeField] Renderer meshRenderer;
+    [SerializeField] public Renderer meshRenderer;
     [SerializeField] public List<GameObject> blockList = new List<GameObject>();
     //trigger
     private void OnTriggerEnter(Collider other)
@@ -24,7 +24,7 @@ namespace Scriptable
             {
                 SpawnBlock();
                 DeleteObject(other);
-                
+
             }
             
         }
