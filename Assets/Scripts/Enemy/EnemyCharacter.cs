@@ -66,15 +66,19 @@
 
             foreach (var hitCollider in hitColliders)
             {
-                // Debug.Log(hitCollider.gameObject.name);
-                // Debug.Log(hitCollider.gameObject.tag);
-                Color hitColliderColor = hitCollider.GetComponent<MeshRenderer>().material.color ? null：;
-                if(hitCollider.gameObject.CompareTag("Block") && material.color == hitColliderColor)
+                MeshRenderer meshRenderer = hitCollider.GetComponent<MeshRenderer>();
+                if (meshRenderer != null && meshRenderer.material != null)
                 {
-                    Debug.Log(hitColliderColor);
-                    targetObjects.Add(hitCollider.gameObject); 
+                    Color hitColliderColor = meshRenderer.material.color;
+                    // Check if the GameObject has the tag "Block" and the colors match
+                    if (hitCollider.gameObject.CompareTag("Block") && material.color == hitColliderColor)
+                    {
+                        Debug.Log(hitColliderColor);
+                        targetObjects.Add(hitCollider.gameObject);
+                    }
                 }
             }
+
 
         }
         public void MoveToTarget()
