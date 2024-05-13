@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 890307258966602605}
   - component: {fileID: 966744794577339746}
   - component: {fileID: 1242758856801230665}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: StageFinishPoint
   m_TagString: CheckPoint
   m_Icon: {fileID: 0}
@@ -30,8 +30,8 @@ Transform:
   m_GameObject: {fileID: 677918039315530831}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0.00873351, y: -0.48864603, z: -2.0672102}
-  m_LocalScale: {x: 0.23420385, y: 0.23069328, z: 0.012934601}
+  m_LocalPosition: {x: -0.010236, y: -0.48864603, z: -2.0672102}
+  m_LocalScale: {x: 0.21400696, y: 0.23069328, z: 0.012934601}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2310478378319059439}
@@ -162,7 +162,7 @@ GameObject:
   - component: {fileID: 6201283540866195064}
   - component: {fileID: 2428546495783691607}
   - component: {fileID: 7782981796907522771}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Barrier (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -295,7 +295,7 @@ GameObject:
   - component: {fileID: 5362876630107365777}
   - component: {fileID: 4374746848313224390}
   - component: {fileID: 3397830214681030479}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Barrier (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -541,7 +541,7 @@ GameObject:
   - component: {fileID: 7123561858225205653}
   - component: {fileID: 585878121297467172}
   - component: {fileID: 2932715866619363664}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Barrier (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1048,6 +1048,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2310478378319059439}
     m_Modifications:
+    - target: {fileID: 132387526311629332, guid: bc0c346bacbde4052be1b083cbd0a4a3, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 807034926599131910, guid: bc0c346bacbde4052be1b083cbd0a4a3, type: 3}
       propertyPath: m_LocalScale.x
       value: 9.175935
@@ -1067,6 +1071,10 @@ PrefabInstance:
     - target: {fileID: 3317603957420388547, guid: bc0c346bacbde4052be1b083cbd0a4a3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 18.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3338995095699804261, guid: bc0c346bacbde4052be1b083cbd0a4a3, type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4428908655271797046, guid: bc0c346bacbde4052be1b083cbd0a4a3, type: 3}
       propertyPath: m_LocalScale.x
@@ -1136,9 +1144,17 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 9.9
       objectReference: {fileID: 0}
+    - target: {fileID: 7657029572875401981, guid: bc0c346bacbde4052be1b083cbd0a4a3, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 9108288940392050438, guid: bc0c346bacbde4052be1b083cbd0a4a3, type: 3}
       propertyPath: m_Name
       value: 'Barriers '
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108288940392050438, guid: bc0c346bacbde4052be1b083cbd0a4a3, type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1232498300065437433}
   - component: {fileID: 6830302908094034948}
   - component: {fileID: 2208461384489132057}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: StageFinishPoint
   m_TagString: CheckPoint
   m_Icon: {fileID: 0}
@@ -30,8 +30,8 @@ Transform:
   m_GameObject: {fileID: 1274157178538711431}
   serializedVersion: 2
   m_LocalRotation: {x: -0.5, y: 0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: 0.48434356, y: 0.010413378, z: -2.1951747}
-  m_LocalScale: {x: 0.30704919, y: 0.23069647, z: 0.012934575}
+  m_LocalPosition: {x: 0.48434356, y: -0.00041086, z: -2.1951747}
+  m_LocalScale: {x: 0.29079494, y: 0.23069647, z: 0.012934575}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3402215280072561896}
@@ -162,7 +162,7 @@ GameObject:
   - component: {fileID: 6583475233297838999}
   - component: {fileID: 8928233882498133361}
   - component: {fileID: 4546749857429225624}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Barrier (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -294,7 +294,7 @@ GameObject:
   - component: {fileID: 3081667378752185265}
   - component: {fileID: 2188086188114034596}
   - component: {fileID: 5956784819260080469}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Barrier (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -310,8 +310,8 @@ Transform:
   m_GameObject: {fileID: 2400945382478048434}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 24.9, y: 0, z: -25.6}
-  m_LocalScale: {x: 3.1328135, y: 0.18028247, z: 0.4043193}
+  m_LocalPosition: {x: 24.9, y: -0, z: -25.5}
+  m_LocalScale: {x: 2.2290282, y: 0.18028247, z: 0.4043193}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 79059201087161830}
@@ -405,7 +405,7 @@ GameObject:
   - component: {fileID: 7933625477117138047}
   - component: {fileID: 459358233316059079}
   - component: {fileID: 6043977367983528576}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Barrier (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -421,8 +421,8 @@ Transform:
   m_GameObject: {fileID: 2410022476883345140}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 24.9, y: 1e-15, z: -4.9}
-  m_LocalScale: {x: 3.1328135, y: 0.18028247, z: 0.4043193}
+  m_LocalPosition: {x: 24.9, y: 0, z: -5.09}
+  m_LocalScale: {x: 2.6219769, y: 0.18028247, z: 0.4043193}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 79059201087161830}
@@ -631,7 +631,7 @@ GameObject:
   - component: {fileID: 1287537308228255299}
   - component: {fileID: 7002363968015439784}
   - component: {fileID: 2788137072198247062}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Barrier (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1049,7 +1049,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 138841972571896541, guid: f6dc59548267942349684fb54d89b801, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.478
+      value: -0.456
       objectReference: {fileID: 0}
     - target: {fileID: 138841972571896541, guid: f6dc59548267942349684fb54d89b801, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1057,7 +1057,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 138841972571896541, guid: f6dc59548267942349684fb54d89b801, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.7
+      value: -2.36
       objectReference: {fileID: 0}
     - target: {fileID: 138841972571896541, guid: f6dc59548267942349684fb54d89b801, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1289,7 +1289,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 138841972571896541, guid: f6dc59548267942349684fb54d89b801, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.489
+      value: -0.467
       objectReference: {fileID: 0}
     - target: {fileID: 138841972571896541, guid: f6dc59548267942349684fb54d89b801, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1297,7 +1297,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 138841972571896541, guid: f6dc59548267942349684fb54d89b801, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.7
+      value: -2.36
       objectReference: {fileID: 0}
     - target: {fileID: 138841972571896541, guid: f6dc59548267942349684fb54d89b801, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1377,6 +1377,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3402215280072561896}
     m_Modifications:
+    - target: {fileID: 132387526311629332, guid: bc0c346bacbde4052be1b083cbd0a4a3, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 807034926599131910, guid: bc0c346bacbde4052be1b083cbd0a4a3, type: 3}
       propertyPath: m_LocalScale.x
       value: 9.175935
@@ -1424,6 +1428,10 @@ PrefabInstance:
     - target: {fileID: 3317603957420388547, guid: bc0c346bacbde4052be1b083cbd0a4a3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: -90.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 3338995095699804261, guid: bc0c346bacbde4052be1b083cbd0a4a3, type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4428908655271797046, guid: bc0c346bacbde4052be1b083cbd0a4a3, type: 3}
       propertyPath: m_LocalScale.x
@@ -1557,9 +1565,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7657029572875401981, guid: bc0c346bacbde4052be1b083cbd0a4a3, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 9108288940392050438, guid: bc0c346bacbde4052be1b083cbd0a4a3, type: 3}
       propertyPath: m_Name
       value: 'Barriers '
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108288940392050438, guid: bc0c346bacbde4052be1b083cbd0a4a3, type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:

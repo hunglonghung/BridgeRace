@@ -23,9 +23,9 @@ TagManager:
   - Block
   - Enemy
   - CheckPoint
-  - 
-  - 
-  - 
+  - Door
+  - BridgeStick
+  - Barriers
   - 
   - 
   - 

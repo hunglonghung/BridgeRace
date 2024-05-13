@@ -9,8 +9,10 @@ using UnityEngine.EventSystems;
 public class PlayerMovement : BaseMovement
 {   
     public FloatingJoystick FloatingJoystick;
+    [SerializeField] float joystickY;
     void FixedUpdate()
     {
+        joystickY = FloatingJoystick.Vertical;
         CheckState();
         MoveDirection = Vector3.forward * FloatingJoystick.Vertical + Vector3.right * FloatingJoystick.Horizontal;
 

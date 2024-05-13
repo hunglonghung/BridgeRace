@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 4238737017937015603}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.03, y: 1.2600002, z: -1.07}
+  m_LocalPosition: {x: 0.03, y: 1.2600002, z: -0.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -253,12 +253,15 @@ MonoBehaviour:
   MoveDirection: {x: 0, y: 0, z: 0}
   isWin: 0
   agent: {fileID: 2822939025849280994}
+  timer: 0
+  randomTargetIndex: 0
   sphereRadius: 30
   targetObjects: []
   target: {fileID: 0}
   blockCount: 0
   blockIndex: 0
   material: {fileID: 2100000, guid: 79218098b3fefa3439dd3d8c0ce0f468, type: 2}
+  checkPoint: {fileID: 0}
   FinishPoint: {fileID: 0}
 --- !u!54 &4344151719915946656
 Rigidbody:
@@ -294,7 +297,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4923728180802460702}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 57beb311ba0864c7bb4454c48c27f2ba, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -302,7 +305,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -364,7 +367,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colorData: {fileID: 11400000, guid: 3c05cc737c93242a9a0dc14d3c58cc64, type: 2}
-  objectToInstantiate: {fileID: 0}
+  objectToInstantiate: {fileID: 6329756115137941030, guid: 016c3b5e2ecf94b31bf5fa07df6ef976, type: 3}
   blockCount: 0
   objectParent: {fileID: 4238737017937015603}
   meshRenderer: {fileID: 3686174705171375352}
